@@ -1,0 +1,25 @@
+Informe practica d'AD: Practica 2. 
+
+login.jsp: Pagina que et deixa accedir si l'usuari i la contrasenya estan a la base de dades, en cas d'introduir-ho incorrectament et redirecciona a error.java
+login.java: Servlet que agafa els parametres del login.jsp, fa les comprovacions i redirecciona a menu.jsp, si ho fas malament t'envia a error.java. 
+
+menu.jsp: Pagina que et permet fer funcions diferents: Registrar una imatge, Modificarla o Llistar-la, a mes a mes de fer el corresponent logout del sistema.
+ 
+error.java: Servlet que tracta diferents casos d'error, exactament els de registrar una imatge, buscar-la, o el login, fent que et permetin tornar de la pagina on vens per tornar a introduir els parametres correctes, o tornar al menu.
+
+registrarImatge.jsp: Pagina que et permet omplir els camps necessaris per donar d'alta una imatge al sistema. 
+registrarImatge.java: Servlet que recull les dades proporcionades anteriorment, les guarda a la base de dades i puja la imatge a una carpeta predeterminada. 
+
+buscarImatge.jsp: Pagina que et permet omplir determinats camps per buscar una imatge ja registrada. 
+buscarImatge.java: Servlet que recull els parametres intruduits anteriorment tractant-los pel numero de parametres introduits, si no troba la imatge va a error.java, a mes a mes t'ofereix un link per veure la imatge i, si ets el propiertari propietari tens la opcio de  modificar sino, no et deixa. Per ultim, et permet borrar la imatge si tambe ets el propietari. Si no introdueixes cap camp, t'ho mostra com si fos un llistar imatge. 
+
+llistarImatge.jsp: EL mateix que buscar imatge pero sense condicions.
+
+modificarImatge.jsp:Pagina que et permet modificar alguns parametres de les imatges pujades. Nomes pots si ets l'autor(propietari) d'aquestes. 
+
+eliminarImatge.java:Servlet que et "recull les dades" de llistar o buscar i te l'esborra de la base de dades. 
+
+logout.jsp:Pagina que et permet sortir de la sessio actual. 
+
+crearUser.jsp:Pagina que permet donar d'alta un usuari que no existeix, si existeix, tracta l'error. 
+crearUser.java:Servlet que recull les dades de la pagina anterior i fa les redireccions que pertoquen. 
